@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="一个简洁的个人开发者主页，用来介绍自己、展示常用工具和代码项目。"
+    />
+    <meta name="theme-color" content="#0b1020" />
+    <title>你的名字｜个人工具与代码库</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b1020'/%3E%3Cpath d='M18 22h28v8H18zm0 12h18v8H18z' fill='%23d7ff64'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand-mark" aria-hidden="true">YL</span>
+        <span>你的个人库</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#about">关于我</a>
+        <a href="#tools">工具</a>
+        <a href="#projects">代码</a>
+      </nav>
+      <button class="theme-button" type="button" aria-label="切换明暗主题" title="切换明暗主题">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> 正在持续学习与创造</p>
+          <h1 id="hero-title">你好，我是<span>你的名字</span>。</h1>
+          <p class="hero-lead">
+            我关注开发、自动化与实用工具。这里是我的个人数字书架，也记录我正在制作的代码和产品。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">浏览我的代码</a>
+            <a class="button button-secondary" href="https://github.com/2631646035-dot" target="_blank" rel="noreferrer">GitHub 主页 ↗</a>
+          </div>
+        </div>
+
+        <aside class="profile-card" aria-label="个人信息摘要">
+          <div class="avatar" aria-hidden="true">YN</div>
+          <div>
+            <p class="profile-name">你的名字</p>
+            <p class="profile-role">开发者 · 工具爱好者</p>
+          </div>
+          <dl class="quick-facts">
+            <div><dt>坐标</dt><dd>中国</dd></div>
+            <div><dt>关注</dt><dd>AI / Web / 自动化</dd></div>
+            <div><dt>状态</dt><dd>开放交流</dd></div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="section-index">01 / ABOUT</p>
+          <h2 id="about-title">关于我</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            我喜欢把重复的事情自动化，把复杂的问题整理成简单、好用的工具。这个网站用来集中展示我的项目、常用工具和学习记录。
+          </p>
+          <p>
+            你可以在这里快速了解我正在研究什么，也可以前往 GitHub 查看完整源码。把这两段文字替换成你的真实经历，就能变成属于你的介绍。
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="tools" aria-labelledby="tools-title">
+        <div class="section-heading">
+          <p class="section-index">02 / TOOLBOX</p>
+          <h2 id="tools-title">我的工具箱</h2>
+          <p>我常用或正在研究的工具与技术。</p>
+        </div>
+        <div class="tool-grid">
+          <article class="tool-card">
+            <span class="tool-number">01</span>
+            <h3>开发工具</h3>
+            <p>用来写代码、调试与管理项目。</p>
+            <ul class="tag-list" aria-label="开发工具列表">
+              <li>VS Code</li><li>Git</li><li>GitHub</li><li>Docker</li>
+            </ul>
+          </article>
+          <article class="tool-card featured">
+            <span class="tool-number">02</span>
+            <h3>语言与框架</h3>
+            <p>用于构建网页、脚本和自动化流程。</p>
+            <ul class="tag-list" aria-label="语言与框架列表">
+              <li>Python</li><li>JavaScript</li><li>HTML / CSS</li><li>React</li>
+            </ul>
+          </article>
+          <article class="tool-card">
+            <span class="tool-number">03</span>
+            <h3>AI 与效率</h3>
+            <p>辅助思考、创作和快速验证想法。</p>
+            <ul class="tag-list" aria-label="AI 与效率工具列表">
+              <li>ChatGPT</li><li>Codex</li><li>Notion</li><li>Figma</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading project-heading">
+          <div>
+            <p class="section-index">03 / CODE</p>
+            <h2 id="projects-title">精选代码</h2>
+            <p>一些我愿意公开分享的项目。</p>
+          </div>
+          <a class="text-link" href="https://github.com/2631646035-dot?tab=repositories" target="_blank" rel="noreferrer">全部仓库 ↗</a>
+        </div>
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-topline"><span>FEATURED / 001</span><span>Python</span></div>
+            <h3><a href="https://github.com/2631646035-dot/Mailcollector" target="_blank" rel="noreferrer">Mailcollector ↗</a></h3>
+            <p>一个基于 Python 的邮件收集工具，仓库包含桌面启动脚本与核心程序。</p>
+            <ul class="project-meta"><li>Python</li><li>Desktop Tool</li><li>Open source</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" aria-labelledby="contact-title">
+        <p class="section-index">04 / CONTACT</p>
+        <h2 id="contact-title">有想法，欢迎交流。</h2>
+        <p>如果你对我的项目感兴趣，或者想一起做点有意思的东西，可以通过 GitHub 联系我。</p>
+        <a class="button button-primary" href="https://github.com/2631646035-dot" target="_blank" rel="noreferrer">在 GitHub 找到我 ↗</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> 你的名字</p>
+      <p>用原生 HTML、CSS 与 JavaScript 构建</p>
+    </footer>
+  </body>
+</html>
