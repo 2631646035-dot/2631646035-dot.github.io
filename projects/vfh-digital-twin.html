@@ -1,1 +1,75 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VFH 海外仓数字孪生｜YL</title><link rel="stylesheet" href="../style.css"></head><body><header class="site-header"><a class="brand" href="../index.html"><span class="brand-mark">YL</span><span>物流科技作品集</span></a><nav class="nav"><a href="../index.html#projects">全部作品</a><a href="https://github.com/2631646035-dot/vfh-warehouse-digital-twin-demo">GitHub</a></nav></header><main class="case-main"><section class="case-hero"><div><p class="eyebrow">CASE 001 · DIGITAL TWIN</p><h1>VFH 海外仓<br><span>数字孪生决策平台</span></h1><p class="case-summary">从海运在途、虚拟海关到 A/B 仓转运，把库容、打托、人效、成本与爆仓风险放进同一个可交互模型。</p><div class="hero-actions"><a class="button button-primary" href="https://github.com/2631646035-dot/vfh-warehouse-digital-twin-demo">查看源代码 ↗</a></div></div><img class="case-cover" src="../assets/vfh/02-network-overview.png" alt="VFH 全链路网络视角"></section><div class="case-stat-grid"><div class="case-stat"><strong>4 节点</strong><span>海运 / 海关 / A仓 / B仓</span></div><div class="case-stat"><strong>20 SKU</strong><span>合成可复现样例</span></div><div class="case-stat"><strong>7 个视图</strong><span>规划、仿真与经营分析</span></div><div class="case-stat"><strong>3D</strong><span>可旋转交互场景</span></div></div><section class="case-section"><p class="section-index">SYSTEM WALKTHROUGH</p><h2>从空间布局，到经营决策</h2><p>界面不是静态效果图：货架尺寸、层数、地堆比例、SKU 打托规则、人效、叉车效率和成本参数均可调整。</p><div class="shot-grid"><figure class="shot"><img src="../assets/vfh/01-warehouse-3d.png"><figcaption><strong>仓内 3D 布局</strong>检查货架、地堆与过道关系。</figcaption></figure><figure class="shot"><img src="../assets/vfh/04-pallet-simulation.png"><figcaption><strong>SKU 打托模拟</strong>按包装尺寸和堆码规则展示真实占用。</figcaption></figure><figure class="shot"><img src="../assets/vfh/05-vfh-decision-overview.png"><figcaption><strong>VFH 决策总览</strong>比较建仓面积、人力和利用率。</figcaption></figure><figure class="shot"><img src="../assets/vfh/06-cost-model.png"><figcaption><strong>成本模型</strong>统一核算租金、操作费、人工与运输。</figcaption></figure><figure class="shot"><img src="../assets/vfh/03-sku-database.png"><figcaption><strong>SKU 数据库</strong>维护尺寸、重量、包装和推荐存储方式。</figcaption></figure><figure class="shot"><img src="../assets/vfh/07-inventory-batches.png"><figcaption><strong>批次库存</strong>保留同 SKU 多批次库龄及收费逻辑。</figcaption></figure></div></section><section class="case-section"><p class="section-index">DEMO FILM</p><h2>作品集演示短片</h2><video class="video-frame" controls muted playsinline poster="../assets/vfh/02-network-overview.png"><source src="../assets/showcase/portfolio-showcase.mp4" type="video/mp4"></video></section></main><footer class="footer"><p>© YL</p><a href="../index.html">返回作品集</a></footer></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VFH 仓中仓规划与运营仿真：比较传统外部送仓与同仓 A/B 区库内转运，推演面积、货位、人力、成本和爆仓风险。">
+  <meta name="theme-color" content="#05080d">
+  <title>VFH 仓中仓规划与运营仿真｜YL</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../stage.css">
+  <script src="../script.js" defer></script>
+  <script src="../vfh-page.js" defer></script>
+</head>
+<body class="vfh-page">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="../index.html"><span class="brand-mark">YL</span><span>物流科技作品集</span></a>
+    <nav class="nav" aria-label="页面导航"><a href="#concept">模式</a><a href="#decision">决策</a><a href="#experience">界面</a></nav>
+    <a class="header-cta" href="../index.html#projects">全部作品 ↗</a>
+  </header>
+
+  <main id="main" class="vfh-main">
+    <section class="vfh-hero" aria-labelledby="vfh-title">
+      <div class="hero-aura" aria-hidden="true"></div>
+      <div class="vfh-hero-inner">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> PROJECT 001 / OPERATIONS INTELLIGENCE</p>
+        <h1 id="vfh-title">一个仓库。<br><span>两种边界。</span><br>更多可能。</h1>
+        <p class="vfh-hero-lead">VFH 仓中仓规划与运营仿真。把外部送仓的运输风险，和仓内固定空间的容量风险，放在同一张决策桌上。</p>
+        <div class="hero-actions"><a class="button button-primary" href="#concept">了解业务逻辑 <span aria-hidden="true">↘</span></a><a class="button button-secondary" href="https://github.com/2631646035-dot/vfh-warehouse-digital-twin-demo" target="_blank" rel="noreferrer">查看演示源码 ↗</a></div>
+        <div class="vfh-hero-foot"><span>01 / 04</span><span>向下滚动，探索模型</span><span class="scroll-line" aria-hidden="true"></span></div>
+      </div>
+      <div class="vfh-hero-visual" aria-hidden="true"><div class="visual-halo"></div><img src="../assets/vfh/02-network-overview.png" alt="" fetchpriority="high"><div class="visual-caption"><span>NETWORK VIEW</span><strong>海运 → 虚拟海关 → A / B 仓</strong></div></div>
+    </section>
+
+    <section id="concept" class="vfh-section concept-section">
+      <div class="chapter-head reveal"><span class="chapter-number">01 / THE CONCEPT</span><span class="chapter-rule"></span><span>从仓外运输，到仓内流转</span></div>
+      <div class="statement reveal"><p>亚马逊与供应商的合作模式</p><h2>VFH<span>仓中仓。</span></h2></div>
+      <p class="concept-intro reveal">在本项目的业务场景里，供应商海外仓划分为自有库存 A 区，与预留固定面积的 VFH B 区。货物按适用业务规则完成状态与货权交接后，在同一仓内由 A 区转入 B 区，减少为送达外部亚马逊仓而发生的装车、预约和卡派环节。</p>
+      <div class="flow-switcher reveal" role="group" aria-label="对比履约路径"><button class="flow-tab is-active" type="button" data-flow="standard" aria-pressed="true">常规外部送仓</button><button class="flow-tab" type="button" data-flow="vfh" aria-pressed="false">VFH 仓内转运</button></div>
+      <div class="flow-stage reveal" data-active-flow="standard">
+        <div class="flow-path flow-standard" aria-label="常规路径"><div class="flow-node"><small>01</small><strong>A 区</strong><span>供应商库存</span></div><i aria-hidden="true"></i><div class="flow-node"><small>02</small><strong>装车 / 预约</strong><span>卡派与装卸</span></div><i aria-hidden="true"></i><div class="flow-node"><small>03</small><strong>外部亚马逊仓</strong><span>送仓与签收</span></div></div>
+        <div class="flow-path flow-vfh" aria-label="VFH 路径"><div class="flow-node"><small>01</small><strong>A 区</strong><span>供应商库存</span></div><i aria-hidden="true"></i><div class="flow-node highlight"><small>02</small><strong>库内转运</strong><span>状态 / 货权交接</span></div><i aria-hidden="true"></i><div class="flow-node"><small>03</small><strong>B 区</strong><span>固定面积 VFH 空间</span></div></div>
+        <p class="flow-note" id="flow-note">外部送仓涉及车辆、预约、装卸与签收；延误、错仓、拒收及包装破损是需要计入的风险。</p>
+      </div>
+      <p class="micro-note reveal">说明：此处的 VFH 是该项目的仓中仓业务定义；货权转移时点、费用与罚则以具体合作协议为准，不等同于亚马逊所有公开履约项目。</p>
+    </section>
+
+    <section class="vfh-section tension-section">
+      <div class="chapter-head reveal"><span class="chapter-number">02 / THE TRADE-OFF</span><span class="chapter-rule"></span><span>节省一段运输，不代表没有代价</span></div>
+      <div class="tension-grid"><div class="tension-copy reveal"><p class="eyebrow">THE OPERATING TENSION</p><h2>省掉仓外那一程，<br><span>接住仓内这一程。</span></h2><p>常规模式有卡派、预约、交付异常和货损风险；VFH 模式降低对外部送仓的依赖，却要持续承担 B 区固定面积、人员与 A→B 转运成本。</p><p>法国仓的实践让问题变得具体：B 区用得少，租金空转；B 区转出不及时，又可能把 A、B 两区一起推向拥堵。</p></div>
+        <div class="risk-panel reveal"><div class="risk-panel-top"><span>CAPACITY PRESSURE</span><span class="live-dot">MODEL VIEW</span></div><div class="capacity-visual" aria-label="示意：B区容量趋紧会向A区传导"><div class="capacity-a"><span>A 区</span><div class="capacity-bar"><b></b></div></div><div class="capacity-b"><span>B 区</span><div class="capacity-bar"><b></b></div></div><div class="capacity-pulse" aria-hidden="true"></div></div><div class="risk-panel-bottom"><strong>容量不是静态数字</strong><span>它随到港批次、转运节奏和出库波动变化。</span></div></div></div>
+      <div class="risk-strip reveal"><div><span>01</span><strong>固定成本</strong><p>B 区按约定面积付费，空置仍有成本。</p></div><div><span>02</span><strong>连锁拥堵</strong><p>B 区转出滞后，会压缩 A 区周转空间。</p></div><div><span>03</span><strong>布局惯性</strong><p>地堆与货架可以调整，但拆装、作业与再次安装并非零成本。</p></div></div>
+    </section>
+
+    <section id="decision" class="vfh-section decision-section">
+      <div class="chapter-head reveal"><span class="chapter-number">03 / THE DECISION ENGINE</span><span class="chapter-rule"></span><span>把争论变成可以推演的问题</span></div>
+      <div class="decision-intro reveal"><p class="eyebrow">SCENARIO × SPACE × TIME</p><h2>不是问“仓库够不够大”。<br><span>而是问：何时、为何、怎样变满。</span></h2></div>
+      <div class="decision-grid"><article class="decision-card reveal"><span class="decision-icon">01</span><h3>在哪个国家建立？</h3><p>对比传统送仓费用、异常风险、B 区固定成本与业务规模，判断 VFH 的适用边界，而不是默认每个国家都值得建。</p><span class="decision-tag">NETWORK / ROI</span></article><article class="decision-card reveal"><span class="decision-icon">02</span><h3>B 区要多大？</h3><p>以入库、出库和在途批次推演占用曲线，识别利用率过低或未来可能超容的时间窗口，支持面积动态调整。</p><span class="decision-tag">CAPACITY / FORECAST</span></article><article class="decision-card reveal"><span class="decision-icon">03</span><h3>货架还是地堆？</h3><p>结合大件 SKU 的尺寸、打托、可堆叠性与叉车通道，比较货架层数、地堆比例和拆装成本，避免局部满仓、局部空置。</p><span class="decision-tag">LAYOUT / SKU</span></article><article class="decision-card reveal"><span class="decision-icon">04</span><h3>多少人、什么时候忙？</h3><p>把 A→B 转运、人效、叉车效率与出入库峰值放入同一情景，比较加班和增员，并识别作业能力不足的风险。</p><span class="decision-tag">LABOR / FLOW</span></article></div>
+      <div class="model-note reveal"><div><span>模型输入</span><strong>真实明细或低密度预警数据</strong></div><div class="model-arrow" aria-hidden="true">→</div><div><span>模型输出</span><strong>成本对比、利用率、拥堵预警与方案边界</strong></div></div>
+      <p class="micro-note reveal">爆仓日期、节省金额及罚金风险均由输入与假设决定。公开演示使用合成数据；“延误可能产生约 3% 罚金”仅作为待合同核实的可调情景，不作为通用费率或既成收益宣称。</p>
+    </section>
+
+    <section id="experience" class="vfh-section experience-section">
+      <div class="chapter-head reveal"><span class="chapter-number">04 / THE EXPERIENCE</span><span class="chapter-rule"></span><span>从模型到可操作的界面</span></div>
+      <div class="experience-head reveal"><h2>看得见的空间。<br><span>改得动的决策。</span></h2><p>下方为演示程序界面。点击可放大查看；公开数据为合成示例，不包含真实客户库存与价格。</p></div>
+      <div class="feature-shot reveal"><button class="shot-open" type="button" data-image="../assets/vfh/01-warehouse-3d.png" data-caption="仓内 3D 场景：同一视角观察 A/B 区、货架、地堆与通道"><img src="../assets/vfh/01-warehouse-3d.png" alt="仓内 3D 场景，展示 A/B 区、货架、地堆与通道" loading="lazy"><span>01 / 仓内 3D 场景 <b>点击查看 ↗</b></span></button></div>
+      <div class="showcase-grid"><figure class="showcase-shot reveal"><button class="shot-open" type="button" data-image="../assets/vfh/04-pallet-simulation.png" data-caption="SKU 打托模拟：按包装尺寸与堆码规则检查空间占用"><img src="../assets/vfh/04-pallet-simulation.png" alt="SKU 打托模拟界面" loading="lazy"><span>02 / SKU 打托模拟 <b>查看 ↗</b></span></button></figure><figure class="showcase-shot reveal"><button class="shot-open" type="button" data-image="../assets/vfh/05-vfh-decision-overview.png" data-caption="VFH 决策总览：面积、人力与利用率的情景比较"><img src="../assets/vfh/05-vfh-decision-overview.png" alt="VFH 决策总览界面" loading="lazy"><span>03 / 决策总览 <b>查看 ↗</b></span></button></figure><figure class="showcase-shot reveal"><button class="shot-open" type="button" data-image="../assets/vfh/06-cost-model.png" data-caption="成本模型：租金、作业、人工与运输费用"><img src="../assets/vfh/06-cost-model.png" alt="仓库成本模型界面" loading="lazy"><span>04 / 成本模型 <b>查看 ↗</b></span></button></figure><figure class="showcase-shot reveal"><button class="shot-open" type="button" data-image="../assets/vfh/07-inventory-batches.png" data-caption="批次库存：同一 SKU 的不同入库批次和库龄"><img src="../assets/vfh/07-inventory-batches.png" alt="批次库存管理界面" loading="lazy"><span>05 / 批次库存 <b>查看 ↗</b></span></button></figure></div>
+      <div class="experience-cta reveal"><div><p class="eyebrow">EXPLORE THE WORK</p><h2>让仓库决策，<br>先在模型里发生。</h2></div><a class="button button-primary" href="https://github.com/2631646035-dot/vfh-warehouse-digital-twin-demo" target="_blank" rel="noreferrer">查看公开演示项目 ↗</a></div>
+    </section>
+  </main>
+  <dialog class="image-dialog" aria-label="演示界面大图"><button class="image-close" type="button" aria-label="关闭大图">×</button><img alt=""><p></p></dialog>
+  <footer class="footer"><p>© <span id="year"></span> YL</p><a href="../index.html">返回作品集 ↗</a></footer>
+</body>
+</html>

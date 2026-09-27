@@ -1,9 +1,7 @@
 const root = document.documentElement;
 const themeButton = document.querySelector('.theme-button');
 const storedTheme = localStorage.getItem('personal-library-theme');
-const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-
-if (storedTheme === 'light' || (!storedTheme && systemPrefersLight)) {
+if (storedTheme === 'light') {
   root.dataset.theme = 'light';
 }
 

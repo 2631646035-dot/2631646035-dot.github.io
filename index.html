@@ -15,9 +15,13 @@
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b1020'/%3E%3Cpath d='M18 22h28v8H18zm0 12h18v8H18z' fill='%23d7ff64'/%3E%3C/svg%3E"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./stage.css" />
+    <link rel="stylesheet" href="./porcelain.css" />
     <script src="./script.js" defer></script>
+    <script src="./porcelain.js" defer></script>
   </head>
-  <body>
+  <body class="portfolio-home" data-background="blue">
+    <canvas id="porcelain-background" aria-hidden="true"></canvas>
     <a class="skip-link" href="#main">跳到主要内容</a>
 
     <header class="site-header">
@@ -30,18 +34,23 @@
         <a href="#capabilities">能力</a>
         <a href="#projects">作品</a>
       </nav>
-      <button class="theme-button" type="button" aria-label="切换明暗主题" title="切换明暗主题">
-        <span aria-hidden="true">◐</span>
-      </button>
+      <label class="background-picker"><span>背景</span>
+        <select id="background-choice" aria-label="更换背景风格">
+          <option value="blue">青花碎瓷</option>
+          <option value="celadon">青瓷碎片</option>
+          <option value="night">夜色青花</option>
+          <option value="plain">简洁科技</option>
+        </select>
+      </label>
     </header>
 
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> LOGISTICS · SIMULATION · AUTOMATION</p>
-          <h1 id="hero-title">把复杂业务，<span>做成可操作的模型。</span></h1>
+          <h1 id="hero-title">让复杂运营，<span>变得可预见。</span></h1>
           <p class="hero-lead">
-            我关注海外仓规划、物流仿真、数字孪生和办公自动化。通过 Python、Web 3D 与数据模型，把成本、产能、库存和流程问题转化为可以验证的决策工具。
+            我把海外仓的空间、库存、成本和作业节奏，转化为可交互的模型。让“要不要建、建多大、何时会满”这样的决策，有依据可看、有情景可试。
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#projects">查看代表作品</a>
@@ -129,12 +138,12 @@
             </a>
             <div class="project-content">
               <div class="project-topline"><span>FEATURED / 001</span><span>物流仿真</span></div>
-              <h3>海外仓数字孪生与前置仓决策平台</h3>
-              <p>把海运在途、虚拟海关、A/B 仓转运、SKU 打托、批次库龄和成本模型放在同一个交互式系统中，支持建仓、面积、人力和爆仓风险分析。</p>
+              <h3>VFH 仓中仓规划与运营仿真</h3>
+              <p>在同一海外仓内划分供应商 A 区与固定面积的 VFH B 区。模型对比传统外部送仓与库内转运的成本和风险，并推演 B 区面积、地堆/货架、人力及爆仓时点。</p>
               <ul class="project-points">
-                <li>4 节点全链路 3D 数字孪生</li>
-                <li>离散事件仿真与经营情景比较</li>
-                <li>20 个合成 SKU 的可复现实例</li>
+                <li>跨国建仓与容量选择</li>
+                <li>A/B 区库内转运和拥堵风险</li>
+                <li>以合成 SKU 演示可复现情景</li>
               </ul>
               <ul class="project-meta"><li>Python</li><li>FastAPI</li><li>Three.js</li><li>SQLite</li></ul>
               <div class="project-actions">
