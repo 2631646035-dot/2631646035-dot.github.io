@@ -10,6 +10,10 @@
 .portfolio-home .hero { gap:45px; }
 .portfolio-home .hero-copy { padding:clamp(24px,3vw,45px); border:1px solid var(--line); border-radius:32px; background:var(--surface); box-shadow:var(--shadow); backdrop-filter:blur(9px); }
 .portfolio-home .hero h1 { font-size:clamp(3rem,6.3vw,6.2rem); line-height:1.12; }
+.portfolio-home .hero-copy { container-type:inline-size; }
+.portfolio-home .hero h1.hero-slogan { font-size:clamp(1.35rem,10.4cqi,4.8rem); line-height:1.32; letter-spacing:-.045em; }
+.portfolio-home .hero h1.hero-slogan span { display:block; white-space:nowrap; }
+.portfolio-home .hero h1.hero-slogan span:first-child { color:var(--text); -webkit-text-fill-color:var(--text); }
 .portfolio-home .hero h1 span { color:var(--accent); background:none; -webkit-text-fill-color:var(--accent); }
 .portfolio-home .profile-card { background:var(--surface); transform:none; }
 .portfolio-home .profile-card:hover { transform:translateY(-5px); }
