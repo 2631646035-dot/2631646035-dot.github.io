@@ -70,7 +70,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
   backdrop-filter: blur(18px);
 }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 760; letter-spacing: -.02em; }
-.brand-mark { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 10px; background: var(--accent); color: var(--accent-ink); font: 800 12px/1 ui-monospace, monospace; }
+.brand-mark { display: grid; place-items: center; width: 66px; height: 36px; flex-shrink: 0; white-space: nowrap; border-radius: 10px; background: var(--accent); color: var(--accent-ink); font: 800 12px/1 ui-monospace, monospace; }
 .nav { display: flex; gap: 28px; color: var(--muted); font-size: .9rem; }
 .nav a { transition: color .2s ease; }
 .nav a:hover { color: var(--text); }
