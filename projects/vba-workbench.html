@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VBA 工作台 · 任务、模板与角色陪伴｜Harry-S</title>
+  <meta name="description" content="Harry-S 的 Windows 桌面工作台：统一任务与周期计划、暂停计时、SOP 模板、悬浮窗和角色互动。含真实界面演示及公开源码。">
+  <link rel="stylesheet" href="../style.css?v=hs2"><link rel="stylesheet" href="../porcelain.css?v=slogan1"><link rel="stylesheet" href="../workbench.css?v=1">
+  <script src="../porcelain.js" defer></script>
+</head>
+<body class="portfolio-home wb-page" data-background="celadon">
+  <canvas id="porcelain-background" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header"><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">H-S</span><span>Harry-S · 作品集</span></a><nav class="nav" aria-label="项目导航"><a href="../index.html#workbench">全部作品</a><a href="#screens">界面展示</a><a href="#start">如何运行</a></nav><label class="background-picker"><span>背景</span><select id="background-choice" aria-label="更换背景风格"><option value="blue">青花碎瓷</option><option value="celadon">青瓷碎片</option><option value="night">夜色青花</option><option value="plain">简洁科技</option></select></label></header>
+  <main id="main" class="wb-main">
+    <section class="wb-hero wb-panel">
+      <div><p class="eyebrow">CASE 004 / LOCAL-FIRST DESKTOP APP</p><h1>认真做事，<br><span>也可以有点意思。</span></h1><p class="wb-lead">VBA 工作台</p><p>把任务、实际用时、做事模板和桌面陪伴放在一起。<br>少切换几个窗口，多留一点专注。</p><div class="hero-actions"><a class="button button-primary" href="https://github.com/2631646035-dot/vba-workbench-desktop" target="_blank" rel="noreferrer">查看 GitHub 源码 ↗</a><a class="button button-secondary" href="#screens">看看实际界面 ↓</a></div><p class="wb-note">Windows 桌面应用 · Python 3.12 · 公开脱敏版<br>网页展示案例；下载后在本地运行，不是浏览器在线工具。</p></div>
+      <figure class="wb-cover"><img src="../assets/workbench/02-companions.png" alt="角色工位模式实际界面，橘猫在进行中的任务上办公"><figcaption>真实程序截图 · 虚构任务数据</figcaption></figure>
+    </section>
+    <section class="wb-flow" aria-label="核心工作流程"><div><span>01 / PLAN</span><h2>统一安排</h2><p>普通任务与周期事项放在一起，标清优先级与预估时间。</p></div><div><span>02 / DO</span><h2>带着模板做</h2><p>任务关联 SOP、邮件话术、附件和在线文档，随时打开。</p></div><div><span>03 / REVIEW</span><h2>留下可复盘记录</h2><p>创建、开始、暂停、完成时间入库，历史记录支持导出。</p></div></section>
+    <section id="screens" class="wb-panel wb-section"><p class="section-index">PRODUCT IN USE</p><h2>不是概念图，是能操作的程序。</h2><p>下面均由实际程序加载虚构任务后渲染。点击图片可以放大查看。</p>
+      <div class="wb-shots">
+        <figure><button class="wb-image" type="button" aria-label="放大今日任务截图"><img loading="lazy" src="../assets/workbench/01-daily.png" alt="简洁视图：任务优先级、用时、开始暂停完成按钮、模板入口"></button><figcaption><strong>01 / 简洁工作台</strong><span>统一安排普通与周期任务；重要性、计时和模板入口就在任务旁。</span></figcaption></figure>
+        <figure><button class="wb-image" type="button" aria-label="放大角色工位截图"><img loading="lazy" src="../assets/workbench/02-companions.png" alt="角色工位视图：任务卡片变成电脑屏幕，角色在正在执行的任务上办公"></button><figcaption><strong>02 / 角色工位</strong><span>任务状态驱动角色办公、休息与完成反馈，可随时切回简洁模式。</span></figcaption></figure>
+        <figure class="wb-compact-shot"><button class="wb-image" type="button" aria-label="放大悬浮窗截图"><img loading="lazy" src="../assets/workbench/03-compact.png" alt="可拖动缩放的任务悬浮窗，含优先级圆点与计时"></button><figcaption><strong>03 / 不抢屏幕的悬浮窗</strong><span>双击开始 / 完成，右键暂停或继续；彩色圆点代表优先级。</span></figcaption></figure>
+        <figure><button class="wb-image" type="button" aria-label="放大模板库截图"><img loading="lazy" src="../assets/workbench/04-templates.png" alt="模板库，示例为周报准备清单 SOP，可复制正文并打开在线文档"></button><figcaption><strong>04 / 把经验留成模板</strong><span>文字、文件与网页链接一起管理；点击任务上的标签即可查看。</span></figcaption></figure>
+      </div>
+    </section>
+    <section class="wb-panel wb-section wb-animation"><div><p class="section-index">A LITTLE COMPANY</p><h2>给重复日常，<br>一点即时反馈。</h2><p>小马、腊肠犬、猴子与橘猫有各自的造型。角色互动是可选体验，任务管理不依赖动画。</p><p class="wb-note">下方是应用角色渲染器导出的动作样例，点击播放。Blender 工程和预计算动作随源码提供；日常使用无需安装 Blender。</p><button class="button button-primary" id="motion-toggle" type="button" aria-pressed="false">播放角色动作</button></div><div id="motion-stage" class="wb-motion-placeholder"><span>4 位桌面搭子</span><p>点击播放，看看它们的脚步。</p></div></section>
+    <section id="start" class="wb-panel wb-section"><p class="section-index">TRY IT LOCALLY</p><h2>下载、解压，然后打开。</h2><ol class="wb-steps"><li><strong>下载公开源码</strong><p>在 GitHub 点击 Code → Download ZIP，完整解压。公开版初始任务库为空，不含个人任务或公司资料。</p></li><li><strong>首次运行</strong><p>安装 Python 3.12 并勾选 Add Python to PATH，双击“打开工作台.bat”。首次需联网准备依赖。</p></li><li><strong>放到桌面，随手打开</strong><p>双击“创建桌面快捷方式.bat”，沿用自定义图标，并尝试设置 Ctrl + Alt + V；可以在快捷方式属性中更改。</p></li></ol><div class="hero-actions"><a class="button button-primary" href="https://github.com/2631646035-dot/vba-workbench-desktop/archive/refs/heads/main.zip">下载公开源码 ZIP ↗</a><a class="button button-secondary" href="https://github.com/2631646035-dot/vba-workbench-desktop#打开与快捷键" target="_blank" rel="noreferrer">阅读完整说明</a></div></section>
+    <section class="wb-panel wb-section wb-boundary"><p class="section-index">ENGINEERING / SCOPE</p><h2>能展示什么，也说明边界。</h2><p><strong>Python + PySide6</strong> 负责桌面交互，<strong>SQLite</strong> 保存本地任务与计时，<strong>Blender</strong> 提供可编辑的角色骨骼动作。</p><p>公开版本包含任务管理、模板、悬浮窗、角色互动和工作流配置编辑器。企业 WMS、邮件账号、私人宏文件及专用执行适配器不包含在内，不能把配置编辑能力等同于业务系统已接通。角色素材用于作品展示，商用前需另行核验授权。</p></section>
+  </main>
+  <footer class="footer"><p>© Harry-S · 业务工具与桌面交互</p><a href="../index.html#workbench">返回作品集 ↑</a></footer>
+  <dialog id="shot-dialog" aria-label="界面截图放大查看"><form method="dialog"><button class="button button-secondary" aria-label="关闭图片">关闭 ×</button></form><img alt=""></dialog>
+  <script>
+  const viewer=document.querySelector('#shot-dialog');
+  document.querySelectorAll('.wb-image').forEach(button=>button.addEventListener('click',()=>{const source=button.querySelector('img');const target=viewer.querySelector('img');target.src=source.src;target.alt=source.alt;viewer.showModal();}));
+  viewer.addEventListener('click',event=>{if(event.target===viewer)viewer.close();});
+  const toggle=document.querySelector('#motion-toggle'),stage=document.querySelector('#motion-stage');
+  toggle.addEventListener('click',()=>{const active=toggle.getAttribute('aria-pressed')==='true';toggle.setAttribute('aria-pressed',String(!active));toggle.textContent=active?'播放角色动作':'停止播放';stage.replaceChildren();if(!active){const img=document.createElement('img');img.src='../assets/workbench/companions.gif';img.alt='小马、腊肠犬、猴子和橘猫的行走循环动画';stage.append(img);}else{const text=document.createElement('span');text.textContent='动作已停止 · 点击可重新播放';stage.append(text);}});
+  </script>
+</body></html>
